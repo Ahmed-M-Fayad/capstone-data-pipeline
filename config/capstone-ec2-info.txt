@@ -1,0 +1,15 @@
+EC2 Instance Configuration
+====================
+Instance ID: i-0ae8e466c0135c946
+Public IP: 13.216.1.246
+Private IP: 172.31.65.20
+AMI: Amazon Linux 2023
+Security Group: sg-02640c14ca7129dac (capstone-etl-sg)
+Key Pair: capstone-etl-key
+IAM Role: myS3Role
+
+SSH Command:
+ssh -i ~/.ssh/capstone-etl-key.pem ec2-user@13.216.1.246
+
+Created: 08/12/2025
+Region: us-east-1
