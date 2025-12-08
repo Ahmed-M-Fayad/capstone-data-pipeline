@@ -53,11 +53,11 @@
 
 ## 📊 Resources Created
 
-| Resource    | ARN/ID                         | Purpose           |
-| ----------- | ------------------------------ | ----------------- |
+| Resource    | ARN/ID                                                                                     | Purpose           |
+| ----------- | ------------------------------ | -----------------                                         |
 | S3 Bucket   | capstone-datalake-590183856719 | Data lake storage |
-| GitHub Repo | [URL]                          | Version control   |
-| Test Data   | 2025-12-06.csv                 | Pipeline testing  |
+| GitHub Repo | https://github.com/Ahmed-M-Fayad/capstone-data-pipeline                          | Version control   |
+| Test Data   | 2025-12-06.csv                 | Pipeline testing        |
 
 ---
 
