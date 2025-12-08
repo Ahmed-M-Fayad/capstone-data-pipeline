@@ -21,7 +21,7 @@
 
 - Created project structure with organized folders
 - Initialized Git repository
-- Pushed to GitHub: [YOUR-REPO-URL]
+- Pushed to GitHub: https://github.com/Ahmed-M-Fayad/capstone-data-pipeline
 - Structure includes: docs/, scripts/, config/, test-data/
 
 ### 2. S3 Data Lake
