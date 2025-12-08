@@ -3,24 +3,32 @@
 ## Completed Tasks
 
 ✅ Created security group `capstone-etl-sg` with SSH access
+
 ✅ Created key pair `capstone-etl-key.pem`
+
 ✅ Launched EC2 instance: t3.small with Amazon Linux 2023
+
 ✅ Attached IAM role `myS3Role` for S3 access
+
 ✅ Bootstrap script installed:
 
 - Python 3.11
 - pandas, boto3, psycopg2-binary, numpy, requests
 - CloudWatch agent
-  ✅ Verified S3 access from EC2
-  ✅ Created test script confirming end-to-end connectivity
+
+✅ Verified S3 access from EC2
+
+✅ Created test script confirming end-to-end connectivity
 
 ## Resources Created
 
-- **EC2 Instance:** i-xxxxxxxxxxxxx (t3.small)
-- **Public IP:** X.X.X.X
-- **Security Group:** sg-xxxxxxxxxxxxx (capstone-etl-sg)
+- **Instance ID:** i-0ae8e466c0135c946
+- **Public IP:** 13.216.1.246
+- **Private IP:** 172.31.65.20
+- **AMI:** Amazon Linux 2023
+- **Security Group:** sg-02640c14ca7129dac (capstone-etl-sg)
 - **Key Pair:** capstone-etl-key
-- **IAM Profile:** myS3Role (pre-existing)
+- **IAM Role:** myS3Role
 
 ## Technical Verification
 
@@ -33,7 +41,7 @@ aws s3 ls s3://capstone-datalake-590183856719/
 ✅ Can read raw-zone/2025-12-05.csv
 
 # IAM role confirmed
-arn:aws:sts::590183856719:assumed-role/myS3Role/i-xxxxxxxxxxxxx
+arn:aws:sts::590183856719:assumed-role/myS3Role/i-0ae8e466c0135c946
 ```
 
 ## Cost Tracking
@@ -43,10 +51,6 @@ arn:aws:sts::590183856719:assumed-role/myS3Role/i-xxxxxxxxxxxxx
 | EC2 t3.small    | 24 hours      | $0.51      |
 | S3 Storage      | 8 MB          | $0.00      |
 | **Total Day 2** |               | **$0.51**  |
-
-## Issues Encountered
-
-[None / or describe any issues and how you solved them]
 
 ## Tomorrow's Plan (Day 3)
 
