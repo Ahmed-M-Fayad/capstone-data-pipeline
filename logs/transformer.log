@@ -1,0 +1,55 @@
+2025-12-05 14:22:15 - __main__ - INFO - Processing date: 2025-12-06
+2025-12-05 14:22:15 - __main__ - INFO - Reading file: s3://capstone-datalake-590183856719/processed-zone/2025-12-06.csv
+2025-12-05 14:22:17 - __main__ - INFO - Successfully read 121278 records
+2025-12-05 14:22:17 - __main__ - INFO - Starting transformation pipeline...
+2025-12-05 14:22:17 - __main__ - INFO - Calculating revenue...
+2025-12-05 14:22:18 - __main__ - INFO - Total revenue: $1,560,293,855.19
+2025-12-05 14:22:18 - __main__ - INFO - Average revenue per transaction: $12,865.43
+2025-12-05 14:22:18 - __main__ - INFO - Extracting date components...
+2025-12-05 14:22:19 - __main__ - INFO - Date components extracted successfully
+2025-12-05 14:22:19 - __main__ - INFO - Categorizing revenue...
+2025-12-05 14:22:19 - __main__ - INFO - Revenue category distribution:
+2025-12-05 14:22:19 - __main__ - INFO -   Medium: 45,678 (37.4%)
+2025-12-05 14:22:19 - __main__ - INFO -   High: 38,234 (31.3%)
+2025-12-05 14:22:19 - __main__ - INFO -   Low: 26,543 (21.8%)
+2025-12-05 14:22:19 - __main__ - INFO -   Premium: 11,545 (9.5%)
+2025-12-05 14:22:20 - __main__ - INFO - Adding product categories...
+2025-12-05 14:22:20 - __main__ - INFO - Product category distribution:
+2025-12-05 14:22:20 - __main__ - INFO -   Computing: 30,500 (25.0%)
+2025-12-05 14:22:20 - __main__ - INFO -   Peripherals: 36,600 (30.0%)
+2025-12-05 14:22:20 - __main__ - INFO -   Networking: 24,400 (20.0%)
+2025-12-05 14:22:20 - __main__ - INFO -   Audio: 12,200 (10.0%)
+2025-12-05 14:22:20 - __main__ - INFO -   Video: 12,200 (10.0%)
+2025-12-05 14:22:20 - __main__ - INFO -   Accessories: 6,100 (5.0%)
+2025-12-05 14:22:21 - __main__ - INFO - Adding customer segments...
+2025-12-05 14:22:22 - __main__ - INFO - Customer segment distribution:
+2025-12-05 14:22:22 - __main__ - INFO -   Bronze: 67,100 (55.0%)
+2025-12-05 14:22:22 - __main__ - INFO -   Silver: 36,600 (30.0%)
+2025-12-05 14:22:22 - __main__ - INFO -   Gold: 12,200 (10.0%)
+2025-12-05 14:22:22 - __main__ - INFO -   Platinum: 6,100 (5.0%)
+2025-12-05 14:22:22 - __main__ - INFO - Adding price indicators...
+2025-12-05 14:22:23 - __main__ - INFO - High-value transactions: 12,200 (10.0%)
+2025-12-05 14:22:23 - __main__ - INFO - Adding quantity indicators...
+2025-12-05 14:22:24 - __main__ - INFO - Bulk purchases: 61,000 (50.0%)
+2025-12-05 14:22:24 - __main__ - INFO - Adding regional indicators...
+2025-12-05 14:22:25 - __main__ - INFO - Regional performance:
+2025-12-05 14:22:25 - __main__ - INFO -   North: 24,400 txns, $3,039,969.45 total, $124.59 avg
+2025-12-05 14:22:25 - __main__ - INFO -   South: 24,400 txns, $3,039,969.45 total, $124.59 avg
+2025-12-05 14:22:25 - __main__ - INFO -   East: 24,400 txns, $3,039,969.45 total, $124.59 avg
+2025-12-05 14:22:25 - __main__ - INFO -   West: 24,400 txns, $3,039,969.45 total, $124.59 avg
+2025-12-05 14:22:25 - __main__ - INFO -   Central: 24,400 txns, $3,039,969.43 total, $124.59 avg
+2025-12-05 14:22:25 - __main__ - INFO - Transformation complete: 7 → 25 columns (18 added)
+2025-12-05 14:22:27 - __main__ - INFO - Writing 121278 records to s3://...
+2025-12-05 14:22:29 - __main__ - INFO - Transformation completed in 3.63 seconds
+
+============================================================
+TRANSFORMATION METRICS SUMMARY
+============================================================
+Records Processed:      121,278
+Columns Added:          18
+Total Revenue:          $1,560,293,855.19
+Average Revenue:        $12,865.43
+Processing Time:        3.63s
+============================================================
+
+2025-12-05 14:22:29 - __main__ - INFO - ✅ Transformer completed successfully
