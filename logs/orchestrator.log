@@ -1,0 +1,66 @@
+2025-12-15 03:26:49 - botocore.credentials - INFO - Found credentials from IAM Role: myS3Role
+2025-12-15 03:26:49 - __main__ - INFO - ETL Pipeline Orchestrator starting for date: 2025-12-05
+2025-12-15 03:26:49 - __main__ - INFO -
+======================================================================
+2025-12-15 03:26:49 - __main__ - INFO - STARTING ETL PIPELINE
+2025-12-15 03:26:49 - __main__ - INFO - ======================================================================
+2025-12-15 03:26:49 - __main__ - INFO - Processing date: 2025-12-05
+2025-12-15 03:26:49 - __main__ - INFO - Start time: 2025-12-15 03:26:49
+2025-12-15 03:26:49 - __main__ - INFO - ======================================================================
+
+2025-12-15 03:26:49 - __main__ - INFO - Checking for input file: s3://capstone-datalake-590183856719/raw-zone/2025-12-05.csv
+2025-12-15 03:26:49 - __main__ - INFO - ✓ Input file found
+2025-12-15 03:26:49 - __main__ - INFO -
+  Starting Stage 1: Data Validation
+2025-12-15 03:26:49 - __main__ - INFO -
+============================================================
+2025-12-15 03:26:49 - __main__ - INFO - STAGE: VALIDATOR
+2025-12-15 03:26:49 - __main__ - INFO - ============================================================
+2025-12-15 03:26:49 - __main__ - INFO - Executing: /usr/bin/python3.11 /opt/capstone-pipeline/scripts/validator.py 2025-12-05
+2025-12-15 03:26:51 - __main__ - INFO - ✓ validator completed successfully in 1.93s
+2025-12-15 03:26:51 - __main__ - INFO -
+  Starting Stage 2: Data Transformation
+2025-12-15 03:26:51 - __main__ - INFO -
+============================================================
+2025-12-15 03:26:51 - __main__ - INFO - STAGE: TRANSFORMER
+2025-12-15 03:26:51 - __main__ - INFO - ============================================================
+2025-12-15 03:26:51 - __main__ - INFO - Executing: /usr/bin/python3.11 /opt/capstone-pipeline/scripts/transformer.py 2025-12-05
+2025-12-15 03:26:55 - __main__ - INFO - ✓ transformer completed successfully in 4.34s
+2025-12-15 03:26:55 - __main__ - INFO -
+  Starting Stage 3: Data Aggregation
+2025-12-15 03:26:55 - __main__ - INFO -
+============================================================
+2025-12-15 03:26:55 - __main__ - INFO - STAGE: AGGREGATOR
+2025-12-15 03:26:55 - __main__ - INFO - ============================================================
+2025-12-15 03:26:55 - __main__ - INFO - Executing: /usr/bin/python3.11 /opt/capstone-pipeline/scripts/aggregator.py 2025-12-05
+2025-12-15 03:26:57 - __main__ - INFO - ✓ aggregator completed successfully in 2.00s
+2025-12-15 03:26:57 - __main__ - INFO -
+Collecting pipeline metrics...
+2025-12-15 03:26:58 - __main__ - INFO - Metrics collected: {'total_transactions': 121278, 'total_revenue': 1560293855.19, 'unique_customers': 9000, 'unique_products': 15}
+2025-12-15 03:26:58 - __main__ - INFO -
+======================================================================
+2025-12-15 03:26:58 - __main__ - INFO - PIPELINE EXECUTION SUMMARY
+2025-12-15 03:26:58 - __main__ - INFO - ======================================================================
+2025-12-15 03:26:58 - __main__ - INFO - Date:                2025-12-05
+2025-12-15 03:26:58 - __main__ - INFO - Start Time:          2025-12-15 03:26:49
+2025-12-15 03:26:58 - __main__ - INFO - End Time:            2025-12-15 03:26:58
+2025-12-15 03:26:58 - __main__ - INFO - Total Duration:      8.45 seconds
+2025-12-15 03:26:58 - __main__ - INFO - ----------------------------------------------------------------------
+2025-12-15 03:26:58 - __main__ - INFO - STAGE RESULTS:
+2025-12-15 03:26:58 - __main__ - INFO -   ✓ Validator       SUCCESS    (1.93s)
+2025-12-15 03:26:58 - __main__ - INFO -   ✓ Transformer     SUCCESS    (4.34s)
+2025-12-15 03:26:58 - __main__ - INFO -   ✓ Aggregator      SUCCESS    (2.00s)
+2025-12-15 03:26:58 - __main__ - INFO - ----------------------------------------------------------------------
+2025-12-15 03:26:58 - __main__ - INFO - PIPELINE METRICS:
+2025-12-15 03:26:58 - __main__ - INFO -   Transactions:      121,278
+2025-12-15 03:26:58 - __main__ - INFO -   Total Revenue:     $1,560,293,855.19
+2025-12-15 03:26:58 - __main__ - INFO -   Unique Customers:  9,000
+2025-12-15 03:26:58 - __main__ - INFO -   Unique Products:   15
+2025-12-15 03:26:58 - __main__ - INFO - ----------------------------------------------------------------------
+2025-12-15 03:26:58 - __main__ - INFO - Overall Status:      SUCCESS
+2025-12-15 03:26:58 - __main__ - INFO - ======================================================================
+
+2025-12-15 03:26:58 - __main__ - INFO - Saving execution report to s3://capstone-datalake-590183856719/pipeline-reports/2025-12-05.json
+2025-12-15 03:26:58 - __main__ - INFO - ✓ Execution report saved
+2025-12-15 03:26:58 - __main__ - INFO -   Pipeline completed successfully!
+2025-12-15 03:26:58 - __main__ - INFO - ✅ Orchestrator completed successfully

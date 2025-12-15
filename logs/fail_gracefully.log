@@ -1,0 +1,32 @@
+2025-12-15 03:29:14 - botocore.credentials - INFO - Found credentials from IAM Role: myS3Role
+2025-12-15 03:29:14 - __main__ - INFO - ETL Pipeline Orchestrator starting for date: 2025-01-01
+2025-12-15 03:29:14 - __main__ - INFO -
+======================================================================
+2025-12-15 03:29:14 - __main__ - INFO - STARTING ETL PIPELINE
+2025-12-15 03:29:14 - __main__ - INFO - ======================================================================
+2025-12-15 03:29:14 - __main__ - INFO - Processing date: 2025-01-01
+2025-12-15 03:29:14 - __main__ - INFO - Start time: 2025-12-15 03:29:14
+2025-12-15 03:29:14 - __main__ - INFO - ======================================================================
+
+2025-12-15 03:29:14 - __main__ - INFO - Checking for input file: s3://capstone-datalake-590183856719/raw-zone/2025-01-01.csv
+2025-12-15 03:29:14 - __main__ - ERROR - ✗ Input file not found: An error occurred (404) when calling the HeadObject operation: Not Found
+2025-12-15 03:29:14 - __main__ - ERROR - Pipeline aborted: Input file not found
+2025-12-15 03:29:14 - __main__ - INFO -
+======================================================================
+2025-12-15 03:29:14 - __main__ - INFO - PIPELINE EXECUTION SUMMARY
+2025-12-15 03:29:14 - __main__ - INFO - ======================================================================
+2025-12-15 03:29:14 - __main__ - INFO - Date:                2025-01-01
+2025-12-15 03:29:14 - __main__ - INFO - Start Time:          2025-12-15 03:29:14
+2025-12-15 03:29:14 - __main__ - INFO - End Time:            2025-12-15 03:29:14
+2025-12-15 03:29:14 - __main__ - INFO - Total Duration:      0.06 seconds
+2025-12-15 03:29:14 - __main__ - INFO - ----------------------------------------------------------------------
+2025-12-15 03:29:14 - __main__ - INFO - STAGE RESULTS:
+2025-12-15 03:29:14 - __main__ - INFO -   ✗ Validator       SKIPPED    (0.00s)
+2025-12-15 03:29:14 - __main__ - INFO -       Error: Input file not found
+2025-12-15 03:29:14 - __main__ - INFO -   ✗ Transformer     PENDING    (0.00s)
+2025-12-15 03:29:14 - __main__ - INFO -   ✗ Aggregator      PENDING    (0.00s)
+2025-12-15 03:29:14 - __main__ - INFO - ----------------------------------------------------------------------
+2025-12-15 03:29:14 - __main__ - INFO - Overall Status:      FAILED
+2025-12-15 03:29:14 - __main__ - INFO - ======================================================================
+
+2025-12-15 03:29:14 - __main__ - ERROR - ❌ Orchestrator failed
