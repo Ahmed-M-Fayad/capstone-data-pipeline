@@ -1,0 +1,61 @@
+2025-12-15 03:09:02 - botocore.credentials - INFO - Found credentials from IAM Role: myS3Role
+2025-12-15 03:09:02 - __main__ - INFO - Processing date: 2025-12-05
+2025-12-15 03:09:02 - __main__ - INFO - Starting aggregation for processed-zone/2025-12-05.csv
+2025-12-15 03:09:02 - __main__ - INFO - Reading file: s3://capstone-datalake-590183856719/processed-zone/2025-12-05.csv
+2025-12-15 03:09:03 - __main__ - INFO - Successfully read 121278 records
+2025-12-15 03:09:03 - __main__ - INFO - Creating daily summary...
+2025-12-15 03:09:03 - __main__ - INFO - Daily summary: 121,278 transactions, $1,560,293,855.19 revenue
+2025-12-15 03:09:03 - __main__ - INFO - Creating regional summaries...
+2025-12-15 03:09:03 - __main__ - INFO -   Central: 24,077 txns, $309,488,835.29 revenue
+2025-12-15 03:09:03 - __main__ - INFO -   East: 24,335 txns, $312,937,780.31 revenue
+2025-12-15 03:09:03 - __main__ - INFO -   North: 24,290 txns, $312,881,493.18 revenue
+2025-12-15 03:09:03 - __main__ - INFO -   South: 24,089 txns, $311,075,881.06 revenue
+2025-12-15 03:09:03 - __main__ - INFO -   West: 24,487 txns, $313,909,865.35 revenue
+2025-12-15 03:09:03 - __main__ - INFO - Creating product summaries...
+2025-12-15 03:09:03 - __main__ - INFO - Top 5 products by revenue:
+2025-12-15 03:09:03 - __main__ - INFO -   1. Cable: $106,862,454.24
+2025-12-15 03:09:03 - __main__ - INFO -   2. Keyboard: $105,888,777.47
+2025-12-15 03:09:03 - __main__ - INFO -   3. Webcam: $104,977,852.76
+2025-12-15 03:09:03 - __main__ - INFO -   4. Router: $104,697,949.80
+2025-12-15 03:09:03 - __main__ - INFO -   5. Laptop: $104,547,995.66
+2025-12-15 03:09:03 - __main__ - INFO - Creating product category summaries...
+2025-12-15 03:09:03 - __main__ - INFO -   Other: $513,544,530.17
+2025-12-15 03:09:03 - __main__ - INFO -   Peripherals: $313,418,677.41
+2025-12-15 03:09:03 - __main__ - INFO -   Computing: $209,023,857.04
+2025-12-15 03:09:03 - __main__ - INFO -   Networking: $208,617,555.79
+2025-12-15 03:09:03 - __main__ - INFO -   Accessories: $106,862,454.24
+2025-12-15 03:09:03 - __main__ - INFO -   Video: $104,977,852.76
+2025-12-15 03:09:03 - __main__ - INFO -   Audio: $103,848,927.78
+2025-12-15 03:09:03 - __main__ - INFO - Creating customer segment summaries...
+2025-12-15 03:09:03 - __main__ - INFO -   Platinum: 9,000 customers, $1,560,293,855.19
+2025-12-15 03:09:03 - __main__ - INFO - Creating time-based summaries...
+2025-12-15 03:09:03 - __main__ - INFO - Created 3 time-based summary types
+2025-12-15 03:09:03 - __main__ - INFO - Creating revenue category summaries...
+2025-12-15 03:09:03 - __main__ - INFO -   High: 14,224 txns (11.7%)
+2025-12-15 03:09:03 - __main__ - INFO -   Low: 446 txns (0.4%)
+2025-12-15 03:09:03 - __main__ - INFO -   Medium: 3,609 txns (3.0%)
+2025-12-15 03:09:03 - __main__ - INFO -   Premium: 102,999 txns (84.9%)
+2025-12-15 03:09:03 - __main__ - INFO - Identifying top 10 customers...
+2025-12-15 03:09:03 - __main__ - INFO - Top customer: CUST3591 ($447,537.48)
+2025-12-15 03:09:03 - __main__ - INFO - Creating regional-product matrix...
+2025-12-15 03:09:03 - __main__ - INFO - Created regional-product matrix with 15 entries
+2025-12-15 03:09:03 - __main__ - INFO - Writing aggregates to s3://capstone-datalake-590183856719/aggregates-zone/daily/2025-12-05.json
+2025-12-15 03:09:03 - __main__ - INFO - Successfully wrote aggregates to S3
+2025-12-15 03:09:03 - __main__ - INFO - Writing aggregates to s3://capstone-datalake-590183856719/aggregates-zone/regional/2025-12-05.json
+2025-12-15 03:09:03 - __main__ - INFO - Successfully wrote aggregates to S3
+2025-12-15 03:09:03 - __main__ - INFO - Writing aggregates to s3://capstone-datalake-590183856719/aggregates-zone/products/2025-12-05.json
+2025-12-15 03:09:03 - __main__ - INFO - Successfully wrote aggregates to S3
+2025-12-15 03:09:03 - __main__ - INFO - Separate aggregate files created
+2025-12-15 03:09:03 - __main__ - INFO - Aggregation completed in 1.31 seconds
+2025-12-15 03:09:03 - __main__ - INFO -
+============================================================
+2025-12-15 03:09:03 - __main__ - INFO - AGGREGATION METRICS SUMMARY
+2025-12-15 03:09:03 - __main__ - INFO - ============================================================
+2025-12-15 03:09:03 - __main__ - INFO - Records Aggregated:         121,278
+2025-12-15 03:09:03 - __main__ - INFO - Daily Summary:              ✓
+2025-12-15 03:09:03 - __main__ - INFO - Regional Summaries:         5
+2025-12-15 03:09:03 - __main__ - INFO - Product Summaries:          15
+2025-12-15 03:09:03 - __main__ - INFO - Processing Time:            1.31s
+2025-12-15 03:09:03 - __main__ - INFO - ============================================================
+
+2025-12-15 03:09:03 - __main__ - INFO - ✅ Aggregator completed successfully
