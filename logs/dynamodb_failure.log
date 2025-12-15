@@ -1,0 +1,12 @@
+2025-12-15 03:52:29 - botocore.credentials - INFO - Found credentials from IAM Role: myS3Role
+2025-12-15 03:52:30 - __main__ - INFO - DynamoDB Loader starting for date: 2025-12-05
+2025-12-15 03:52:30 - __main__ - INFO -
+Loading data for 2025-12-05
+2025-12-15 03:52:30 - __main__ - INFO - Reading aggregates: s3://capstone-datalake-590183856719/aggregates-zone/daily/2025-12-05.json
+2025-12-15 03:52:30 - __main__ - INFO - Successfully read aggregates for 2025-12-05
+2025-12-15 03:52:30 - __main__ - INFO - Creating items for 5 regions
+2025-12-15 03:52:30 - __main__ - INFO - Created 6 items for DynamoDB
+2025-12-15 03:52:30 - __main__ - INFO - Writing 6 items to DynamoDB...
+2025-12-15 03:52:30 - __main__ - ERROR - Failed to write items: An error occurred (AccessDeniedException) when calling the BatchWriteItem operation: User: arn:aws:sts::590183856719:assumed-role/myS3Role/i-078cafa3653cdc64e is not authorized to perform: dynamodb:BatchWriteItem on resource: arn:aws:dynamodb:us-east-1:590183856719:table/capstone-metrics because no identity-based policy allows the dynamodb:BatchWriteItem action
+2025-12-15 03:52:30 - __main__ - ERROR - Failed to load data: An error occurred (AccessDeniedException) when calling the BatchWriteItem operation: User: arn:aws:sts::590183856719:assumed-role/myS3Role/i-078cafa3653cdc64e is not authorized to perform: dynamodb:BatchWriteItem on resource: arn:aws:dynamodb:us-east-1:590183856719:table/capstone-metrics because no identity-based policy allows the dynamodb:BatchWriteItem action
+2025-12-15 03:52:30 - __main__ - ERROR - ❌ DynamoDB Loader failed

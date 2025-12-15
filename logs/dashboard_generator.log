@@ -1,0 +1,11 @@
+2025-12-15 04:56:26 - botocore.credentials - INFO - Found credentials from IAM Role: myS3Role
+2025-12-15 04:56:27 - __main__ - INFO - Enhanced Dashboard Generator starting for date: 2025-12-05
+2025-12-15 04:56:27 - __main__ - INFO -
+Generating enhanced dashboard for 2025-12-05
+2025-12-15 04:56:27 - __main__ - INFO - Reading aggregates: s3://capstone-datalake-590183856719/aggregates-zone/daily/2025-12-05.json
+2025-12-15 04:56:27 - __main__ - INFO - Successfully read aggregates for 2025-12-05
+2025-12-15 04:56:27 - __main__ - INFO - Uploading dashboard to s3://capstone-dashboard-590183856719/index.html
+2025-12-15 04:56:27 - __main__ - INFO - ✓ Dashboard uploaded successfully
+2025-12-15 04:56:27 - __main__ - INFO -
+✅ Enhanced dashboard available at: http://capstone-dashboard-590183856719.s3-website-us-east-1.amazonaws.com
+2025-12-15 04:56:27 - __main__ - INFO - ✅ Enhanced dashboard generation completed successfully
